@@ -43,11 +43,22 @@
 ### 1. 사용자 유형 분포 
 - Stable: 17,261명 - Neutral: 2823명 - Churn: 2261명 - Hidden Churn: 187명 - Inconsistent: 109명
 
--> 전체 사용자 중 일부는 명확하게 이탈 행동을 보였으며, 잠재적으로 이탈 가능성이 있는 사용자군도 존재함을 확인함. 
+-> 전체 사용자 중 일부는 명확하게 이탈 행동을 보였으며, 잠재적으로 이탈 가능성이 있는 사용자군도 존재함. 
 
 --- 
 
-### 2. 이탈 사용자(churn) 키워드 분석 
+### 2. 사용자 유형별 특징 비교
+
+| 유형 | 특징 | 해석 |
+|------|------|------|
+| Stable | 평점 높음 + 추천 | 만족 상태 |
+| Churn | 평점 낮음 + 비추천 | 명확한 이탈 |
+| Hidden Churn | 평점 높음 + 비추천 | 잠재 이탈 |
+| Inconsistent | 평점 낮음 + 추천 | 데이터 혼합 |
+
+---
+
+### 3. 이탈 사용자(churn) 키워드 분석 
 ![Churn Keywords](./images/Churn_User_Keywords.png) 
 - 주요 키워드: not, too, small, fit, size, disappointed, return, cheap
 
@@ -55,7 +66,18 @@
 
 ---
 
-### 3. 잠재적 이탈 사용자(hidden_churn) 키워드 분석 
+### 3-1. Churn vs Hidden Churn 키워드 비교
+![Churn vs Hidden Keywords](./images/Churn%20vs%20Hidden%20Keyword%20Comparison.png)
+
+| 구분 | 주요 키워드 | 특징 |
+|------|------------|------|
+| Churn | not, too, small, fit, size, disappointed, return, cheap | 강한 부정 표현 + 품질 및 불만 요소 포함 |
+| Hidden Churn | not, fit, size, small, too | 상대적으로 약한 불만 + 주로 사이즈/핏 문제 중심 |
+
+-> Churn 사용자는 품질 및 전반적인 만족도 문제까지 포함된 강한 이탈 신호를 보이며, 
+Hidden Chrun 사용자는 주로 사이즈 및 착용감 문제에서 발생하는 잠재적 이탈 신호를 보임.
+
+### 4. 잠재적 이탈 사용자(hidden_churn) 키워드 분석 
 ![Hidden Churn Keywords](./images/Hidden_Churn_Keywords.png) 
 - 주요 키워드: not, fit, size, small, too
 
@@ -63,14 +85,14 @@
 
 --- 
 
-### 4. 핵심 인사이트 
+### 5. 핵심 인사이트 
 
 - 사이즈(size), 핏(fit), 작음(small) 관련 키워드가 공통적으로 높은 빈도를 보임.
 - 이는 사이즈 및 착용감 문제가 주요 이탈 요인임을 의미함.
 
 --- 
 
-### 5. 키워드 기반 리뷰 분석
+### 6. 키워드 기반 리뷰 분석
 'size', 'fit', 'small' 키워드가 포함된 리뷰 예시:
 
 - 체형 대비 과도한 사이즈로 인해 착용이 어려운 경우
@@ -79,7 +101,7 @@
 - 소재 품질 저하로 인해 착용감이 떨어지고 만족도가 감소한 경우
 
 -> 실제 리뷰에서는 "사이즈 불일치, 핏 문제, 품질 문제"가 복합적으로 작용하여 
-이탈 및 반품으로 이어지는 패턴을 확인할 수 있었다.
+이탈 및 반품으로 이어지는 패턴을 확인할 수 있었음.
 
 
 
