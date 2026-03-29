@@ -8,7 +8,7 @@
 3. [분석 과정](#분석-과정)
 4. [분석 결과](#분석-결과)
 5. [CRM 전략](#crm-전략)
-6. [Business Impact / 활용 시나리오](#business-impact/활용-시나리오)
+6. [Business Impact / 활용 시나리오](#business-impact--활용-시나리오)
 
 ---
 
