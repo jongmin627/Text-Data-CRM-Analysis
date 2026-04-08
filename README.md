@@ -191,25 +191,6 @@
 
 ---
 
-## 📂 프로젝트 구조
-
-project/
-│
-├── data/
-│ └── Womens Clothing E-Commerce Reviews.csv
-│
-├── images/
-│ ├── churn_keywords.png
-│ └── hidden_churn_keywords.png
-│
-├── notebook/
-│ └── churn_analysis.ipynb
-│
-├── src/ (optional)
-│  
-│
-└── README.md
-
 ### 📌 폴더 설명
 - **data/** → 원본 데이터 저장
 - **images/** → 그래프 결과 저장 (README에서 사용)
