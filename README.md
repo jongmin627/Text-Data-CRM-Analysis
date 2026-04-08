@@ -192,3 +192,34 @@
 ---
 
 ## 📂 프로젝트 구조
+
+project/
+│
+├── data/
+│ └── Womens Clothing E-Commerce Reviews.csv
+│
+├── images/
+│ ├── churn_keywords.png
+│ └── hidden_churn_keywords.png
+│
+├── notebook/
+│ └── churn_analysis.ipynb
+│
+├── src/ (optional)
+│  
+│
+└── README.md
+
+### 📌 폴더 설명
+- **data/** → 원본 데이터 저장
+- **images/** → 그래프 결과 저장 (README에서 사용)
+- **notebook/** → 실제 분석 코드
+- **src/** → 코드 정리용 (선택)
+
+---
+
+## 🚀 확장 가능성
+
+- 개인화 추천 시스템 연동
+- CRM 자동화
+- 실시간 리뷰 분석 시스템 구축
